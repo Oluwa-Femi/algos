@@ -4,7 +4,6 @@ var persons = [
   {firstname : "Jayne", lastname: "Cobb"}
 ];
 
-
 function getFullName(item) {
   var fullname = [item.firstname,item.lastname].join(" ");
   return fullname;
