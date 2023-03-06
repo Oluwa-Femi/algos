@@ -1,0 +1,45 @@
+const arr = [1,2,3,4,5,6,7,8,9,10];
+
+function newSolve(array) {
+    for (let i=0; i<arr.length; i++) {
+        console.log(array[i] + 1);
+    }
+}
+newSolve(arr)
+
+function addAll(array){
+    array.forEach(arriNum => console.log(arriNum + 1));
+}
+
+addAll(arr);
+
+function getOdd (array) {
+    let arrOdd = []
+    for (let i=0; i<array.length; i++){
+        if (array[i] % 2 !== 0){
+            arrOdd.push(array[i]);
+        }
+    }
+    return arrOdd;
+}
+
+getOdd(arr)
+
+//list of numbers and a number k, return if addition of any of the 2 numbers = k, return true
+
+function twoNumbers(list, k) {
+    newArr = [];
+    for (let i=0; i<list.length; i++) {
+        for (let j=i+1; j<list.length; j++) {
+            if (list[i] + list[j] === k){
+                newArr.push(list[i], list[j])
+                return newArr;
+            }
+        }
+    }
+}
+
+twoNumbers(arr, 10)
+
+// hash map - alternative is to use hashmap
+

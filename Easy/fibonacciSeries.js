@@ -13,5 +13,4 @@ function FibonacciChecker(num) {
     return "no"
   }
 }
-// keep this function call here 
-// console.log(FibonacciChecker(readline()));
+console.log(FibonacciChecker(num));
